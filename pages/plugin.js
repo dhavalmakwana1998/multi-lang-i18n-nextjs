@@ -5,7 +5,7 @@ import LanguageSelect from "../component/LanguageSelect";
 function plugin() {
   const { t } = useTranslation("common");
   const title = t("title");
-  const titleFromOtherNamespace = t("about:title");
+  const titleFromOtherNamespace = t("other:title");
   const example = t("variable-example", { count: 21 });
   const exampleDefault = t(
     "example",
