@@ -1,12 +1,14 @@
 import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
 function Footer() {
+  const { t, lang } = useTranslation("common");
   return (
     <>
-      <div class="footer">
+      <div className="footer">
         <h4>
-          All rights reserved by <span style={{ color: "red" }}>&#10084;</span>{" "}
-          Dhaval Mak
+          {t("copyright")} <span style={{ color: "red" }}>&#10084;</span> Dhaval
+          Makwana
         </h4>
       </div>
     </>
